@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Header from '../Header/Header'
 import './Hero.css'
 import hero_image from '../../assets/hero_image.png'
@@ -11,10 +11,7 @@ import NumberCounter from 'number-counter'
 const Hero = () => {
 
   const transition = { type: 'spring', duration: 3 };
-  const [mobile, setMobile] = useState(false)
-  if (window.innerWidth <= 768) {
-    setMobile(true)
-  }
+  const mobile = window.innerWidth <= 768 ? true: false;
   return (
     <div className="hero" id='Home'>
       <div className="blur hero-blur"></div>
