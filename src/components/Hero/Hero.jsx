@@ -20,7 +20,7 @@ const Hero = () => {
         {/* the best ad*/}
         <div className="the-best-ad">
           <motion.div
-            initial={{ left: mobile? "163px": '238px' }}
+            initial={{ left: mobile ? "163px": '238px' }}
             whileInView={{ left: '8px' }}
             transition={{ ...transition, type: 'tween' }}>
           </motion.div>
