@@ -11,7 +11,7 @@ import NumberCounter from 'number-counter'
 const Hero = () => {
 
   const transition = { type: 'spring', duration: 3 };
-  const mobile = window.innerWidth<=768 ? true: false;
+  const mobile = window.innerWidth <= 768 ? true: false;
   return (
     <div className="hero" id='Home'>
       <div className="blur hero-blur"></div>
